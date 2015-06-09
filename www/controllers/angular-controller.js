@@ -22,9 +22,9 @@ angularConfig.controller('TelaCtrl', function($rootScope, $location)
 angularConfig.controller('ContatoCtrl', function($rootScope, $location)
 {
     //fecha o snap
-    appClass.snap.close();
+    //appClass.snap.close();
     //coloca uma classe se ativado no link do menu
-    $rootScope.activetab = $location.path();
+    //$rootScope.activetab = $location.path();
 });  
 
 angularConfig.controller('HomeCtrl', function($rootScope, $location)

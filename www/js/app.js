@@ -40,4 +40,12 @@ function App()
     {
         FastClick.attach(document.body);
     }
+	
+	obj.iniIscroll = function()
+	{
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		var myScroll = new IScroll('#wrapper', {
+			scrollbars: true
+		});
+	}
 }

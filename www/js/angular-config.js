@@ -7,14 +7,9 @@ angularConfig.config(function($routeProvider, $locationProvider)
  
    $routeProvider
    // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
-   .when('/home', {
+   .when('/', {
       templateUrl : 'views/home.html',
       controller     : 'HomeCtrl',
-   }) 
-   // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
-   .when('/', {
-      templateUrl : 'views/tela.html',
-      controller     : 'TelaCtrl',
    })
    // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
    .when('/contato', {
