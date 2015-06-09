@@ -15,6 +15,11 @@ angularConfig.config(function($routeProvider, $locationProvider)
    .when('/contato', {
       templateUrl : 'views/contato.html',
       controller  : 'ContatoCtrl',
+   }) 
+   // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
+   .when('/tela', {
+      templateUrl : 'views/tela.html',
+      controller  : 'TelaCtrl',
    })
    // caso não seja nenhum desses, redirecione para a rota '/'
    .otherwise ({ redirectTo: '/' });
